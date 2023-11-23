@@ -33,6 +33,8 @@ define calculate_celsius(fahrenheit):
     
 main()
 '''
+
+
 def main():
     MENU = """C - Convert Celsius to Fahrenheit
 F - Convert Fahrenheit to Celsius
@@ -64,5 +66,5 @@ def calculate_fahrenheit(celsius):
     fahrenheit = celsius * 9.0 / 5 + 32
     return fahrenheit
 
-main()
 
+main()
