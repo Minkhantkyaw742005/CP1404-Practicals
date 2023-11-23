@@ -1,4 +1,4 @@
-'''
+"""
 MINIMUM_LENGTH = 7
 define main():
     password = get_valid_password()
@@ -16,7 +16,7 @@ define get_valid_password():
     return password
 
 main()
-'''
+"""
 
 MINIMUM_LENGTH = 7
 def main():
