@@ -4,25 +4,34 @@ Pseudocode for temperature conversion
 """
 
 ''''
-MENU = """C - Convert Celsius to Fahrenheit
+define main():
+    MENU = """C - Convert Celsius to Fahrenheit
 F - Convert Fahrenheit to Celsius
 Q - Quit"""
-display MENU
-get choice 
-while choice != "Q"
-    if choice == "C"
-        get celsius
-        fahrenheit = celsius * 9.0 / 5 + 32
-        display fahrenheit 
-    else if choice == "F"
-        get fahrenheit
-        celsius = 5 / 9 * (fahrenheit - 32)
-        display celsius
-    else 
-        display "Invalid option"
     display MENU
-    get choice
-display "Thank you"
+    get choice 
+    while choice != "Q"
+        if choice == "C"
+            get celsius
+            display fahrenheit 
+        else if choice == "F"
+            get fahrenheit
+            display celsius
+        else 
+            display "Invalid option"
+        display MENU
+        get choice
+    display "Thank you"
+
+define calculate_fahrenheit(celsius):
+    fahrenheit = celsius * 9.0 / 5 + 32
+    return fahrenheit
+
+define calculate_celsius(fahrenheit):
+    celsius = 5 / 9 * (fahrenheit - 32)
+    return celsius
+    
+main()
 '''
 def main():
     MENU = """C - Convert Celsius to Fahrenheit
@@ -56,3 +65,4 @@ def calculate_fahrenheit(celsius):
     return fahrenheit
 
 main()
+
