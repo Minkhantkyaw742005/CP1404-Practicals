@@ -24,6 +24,7 @@ def main():
     print_asterisks(password)
 
 
+
 def print_asterisks(password):
     for i in range(len(password)):
         print("*", end="")
