@@ -43,6 +43,7 @@ define decides_result(score):
     return result
 
 main()
+
 '''
 
 
