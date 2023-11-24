@@ -14,6 +14,7 @@ else if score >= 50
 else 
     display "Bad"
 '''
+
 score = float(input("Score: "))
 if score < 0 or score > 100:
     print("Invalid score")
