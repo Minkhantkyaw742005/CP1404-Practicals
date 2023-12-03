@@ -4,7 +4,7 @@ Data file -> lists program
 """
 
 FILENAME = "subject_data.txt"
-
+TOTAL_SUBJECT = 3
 
 def main():
     data = get_data()
@@ -33,7 +33,8 @@ def get_data():
     input_file.close()
 
 def display_subject_details(data):
-    for number in range(3):
+    """This function takes data and print subject details as a result"""
+    for number in range(TOTAL_SUBJECT):
         subject = data[number]
         print(f"{subject[0]} is taught by {subject[1]} and has {subject[-1]} students")
 
