@@ -1,5 +1,6 @@
 def main():
     """Create a dictionary of emails-to-names."""
+
     email_to_name = {}
     user_email = input("Email: ")
 
@@ -19,6 +20,7 @@ def main():
 
 def get_name_from_email(email):
     """Extract an expected name from the email address."""
+
     email_prefix = email.split('@')[0]
     name_parts = email_prefix.split('.')
     user_name = " ".join(name_parts).title()

@@ -9,6 +9,5 @@ while True:
             break
         color_code = COLORS[color_name]
         print(f"Color code for {color_name} is {color_code}")
-
     except KeyError:
         print("Invalid")
